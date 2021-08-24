@@ -51,7 +51,7 @@ jobs:
     - name: Conexión Remota disponible.
 
     - name: Usuario } admin.
-    - name: Clave } claverdp
+    - name: Clave } claverdp.
 
     - name: En Línea.
 
