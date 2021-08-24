@@ -26,7 +26,8 @@ jobs:
         Set-ItemProperty -Path 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -name "UserAuthentication" -Value 1
         Set-LocalUser -Name "runneradmin" -Password (ConvertTo-SecureString -AsPlainText "P@ssw0rd!" -Force)
     - name: Enlazando servidor y obteniendo IP.
-      run: Start-Process Powershell -ArgumentList '-Noexit -Command ".\ngrok\ngrok.exe tcp 3389"'
+      name: Usuario administrador
+      name: Clave cuentardp
     - name: Conexión Remota disponible.
       run: cmd /c start.bat
     - name: En Línea.
